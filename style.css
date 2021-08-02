@@ -99,6 +99,7 @@ body {
   border-radius: 10px;
   background-image: url("images/alla-altayer.png");
   background-size: cover;
+  background-position: center;
 }
 .overlay-under p {
   color: #fff;
@@ -114,6 +115,7 @@ body {
   border-radius: 10px;
   background-image: url("images/alla-altayer.png");
   background-size: cover;
+  background-position: center;
   position: relative;
   top: -250px;
   opacity: 0%;
