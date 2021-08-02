@@ -9,7 +9,7 @@
       content="Nouf Alshehri portfolio, a front-end engineer and UX/UI and graphic designer"
     />
     <title>Software engineering projects</title>
-    <link rel="icon" href="images/logo.svg" />
+    <link rel="icon" href="../images/logo.svg" />
     <!-- Bootstrap -->
     <link
       rel="stylesheet"
@@ -33,8 +33,259 @@
       referrerpolicy="no-referrer"
     />
     <!-- css styles -->
+    <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../css/SE-style.css" />
   </head>
 
-  <body></body>
+  <body>
+    <section class="container">
+      <!-- navigation bar -->
+      <section class="nav-bar d-flex justify-content-between">
+        <img src="../images/logo.svg" alt="Nouf logo" />
+        <a href="javascript:void(0);" onclick="showMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </section>
+    </section>
+    <!-- menu offset -->
+    <section style="height: 70px"></section>
+
+    <!-- menu links -->
+    <section id="nav-links">
+      <a href="../index.html"><h5>Home</h5></a>
+      <a href="../index.html"><h5>Skills</h5></a>
+      <details>
+        <summary>
+          <h5 style="display: inline">Projects</h5>
+        </summary>
+        <a href="#"><h5>Software Engineering</h5></a>
+        <a href="ux-design-projects.html" target="_blank"
+          ><h5>UI/UX Designens</h5></a
+        >
+        <a href="graphic-design-projects.html" target="_blank"
+          ><h5>Graphics Designs</h5></a
+        >
+      </details>
+      <a href="#footer"><h5>Contact</h5></a>
+    </section>
+    <!-- projects section -->
+    <section class="container">
+      <section class="projects">
+        <section class="SE-projects">
+          <h3>Software Engineering projects</h3>
+          <section class="project">
+            <div
+              class="overlay"
+              style="background-image: url(../images/SE-alla-altayer.png)"
+            ></div>
+            <div class="overlay-under">
+              <p>
+                Alla-Altayer is a web app that contains 5 games for family
+                gatherings
+              </p>
+              <div class="links-container">
+                <div class="links-background">
+                  <a href="https://alla-altayer.herokuapp.com/" target="_blank"
+                    ><i class="fas fa-link"></i
+                  ></a>
+                </div>
+                <div class="links-background">
+                  <a
+                    href="https://github.com/Nourajaloud/random-games"
+                    target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- project #2 -->
+          <section class="project">
+            <div
+              class="overlay"
+              style="background-image: url(../images/SE-passion-platform.png)"
+            ></div>
+            <div class="overlay-under">
+              <p>
+                Designed and deployed the landing page of a Saudi start-up
+                company named passion platform.
+              </p>
+              <div class="links-container">
+                <div class="links-background">
+                  <a href="https://passionplatform.netlify.app/" target="_blank"
+                    ><i class="fas fa-link"></i
+                  ></a>
+                </div>
+                <div class="links-background">
+                  <a
+                    href="https://github.com/noufalshehri/passion-platform"
+                    target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- project #3 -->
+          <section class="project">
+            <div
+              class="overlay"
+              style="background-image: url(../images/SE-ATSED.png)"
+            ></div>
+            <div class="overlay-under">
+              <p>
+                a system that prioritize the patients based on their urgency
+                level at emergency departments.
+              </p>
+              <div class="links-container">
+                <div class="links-background">
+                  <a
+                    href="https://github.com/noufalshehri/ATSED_patients"
+                    target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- project #4 -->
+          <section class="project">
+            <div
+              class="overlay"
+              style="background-image: url(../images/SE-blog.png)"
+            ></div>
+            <div class="overlay-under">
+              <p>a blog website front-end design</p>
+              <div class="links-container">
+                <div class="links-background">
+                  <a href="https://noufs.netlify.app/" target="_blank"
+                    ><i class="fas fa-link"></i
+                  ></a>
+                </div>
+                <div class="links-background">
+                  <a
+                    href="https://github.com/noufalshehri/Nouf-s-blog"
+                    target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- project #5 -->
+          <section class="project">
+            <div
+              class="overlay"
+              style="background-image: url(../images/SE-Saffrah.png)"
+            ></div>
+            <div class="overlay-under">
+              <p>
+                A travel web app that displays weather and an image of the
+                location
+              </p>
+              <div class="links-container">
+                <div class="links-background">
+                  <a href="https://saffrah.herokuapp.com/" target="_blank"
+                    ><i class="fas fa-link"></i
+                  ></a>
+                </div>
+                <div class="links-background">
+                  <a
+                    href="https://github.com/noufalshehri/travel-app"
+                    target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- project #6 -->
+          <section class="project">
+            <div
+              class="overlay"
+              style="background-image: url(../images/SE-weather-app.png)"
+            ></div>
+            <div class="overlay-under">
+              <p>
+                weather journal web app that uses Web API and user data to
+                dynamically update the UI.
+              </p>
+              <div class="links-container">
+                <div class="links-background">
+                  <a href="https://weather-maapp.herokuapp.com/" target="_blank"
+                    ><i class="fas fa-link"></i
+                  ></a>
+                </div>
+                <div class="links-background">
+                  <a
+                    href="https://github.com/noufalshehri/weather-journal-app"
+                    target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- project #7 -->
+          <section class="project">
+            <div
+              class="overlay"
+              style="background-image: url(../images/SE-rock.png)"
+            ></div>
+            <div class="overlay-under">
+              <p>Rock, Paper, Scissors game website</p>
+              <div class="links-container">
+                <div class="links-background">
+                  <a
+                    href="https://noufalshehri.github.io/Nouf-Alshehri-Rock-Paper-Scissors/"
+                    target="_blank"
+                    ><i class="fas fa-link"></i
+                  ></a>
+                </div>
+                <div class="links-background">
+                  <a
+                    href="https://github.com/noufalshehri/Nouf-Alshehri-Rock-Paper-Scissors"
+                    target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+      </section>
+
+      <button
+        class="top-btn"
+        onclick='window.scrollTo({top: 0, behavior: "smooth"});'
+      >
+        <i class="fas fa-chevron-up"></i>
+      </button>
+    </section>
+    <!-- footer -->
+    <footer id="footer">
+      <p>Learning every single day, <br />To make a change!</p>
+      <a href="mailto:NoufAllshehri@gmail.com" target="_blank"
+        ><img src="../images/email.svg" alt="email"
+      /></a>
+      <a href="https://twitter.com/_alnouf" target="_blank"
+        ><img src="../images/twitter.svg" alt="twitter"
+      /></a>
+      <a href="https://www.linkedin.com/in/noufallshehri/" target="_blank"
+        ><img src="../images/linkedin.svg" alt="linkedin"
+      /></a>
+    </footer>
+    <script>
+      function showMenu() {
+        var x = document.getElementById("nav-links");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+  </body>
 </html>

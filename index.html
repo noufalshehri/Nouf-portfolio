@@ -37,17 +37,35 @@
     <!-- css styles -->
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
     <section class="container">
       <!-- navigation bar -->
-      <nav class="nav-bar d-flex justify-content-between">
+      <section class="nav-bar d-flex justify-content-between">
         <img src="images/logo.svg" alt="Nouf logo" />
-        <img src="images/menu.svg" alt="menu" />
-      </nav>
+        <a href="javascript:void(0);" onclick="showMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </section>
     </section>
     <!-- menu offset -->
     <section style="height: 70px"></section>
+
+    <!-- menu links -->
+    <section id="nav-links">
+      <a href="#"><h5>Home</h5></a>
+      <a href=""><h5>Skills</h5></a>
+      <details>
+        <summary>
+          <h5 style="display: inline">Projects</h5>
+        </summary>
+        <a href="html/software-engineering-projects.html" target="_blank"
+          ><h5>Software Engineering</h5></a
+        >
+        <a href=""><h5>UI/UX Designens</h5></a>
+        <a href=""><h5>Graphics Designs</h5></a>
+      </details>
+      <a href=""><h5>Contact</h5></a>
+    </section>
     <!-- header -->
     <header class="header">
       <section class="header__title">
@@ -127,47 +145,7 @@
           </section>
         </section>
       </section>
-      <!-- projects section -->
-      <section class="projects">
-        <h2>Projects</h2>
-        <section class="SE-projects">
-          <h3>Software Engineering</h3>
-          <div class="overlay"></div>
-          <div class="overlay-under">
-            <p>
-              Alla-Altayer is a web app that contains 5 games for family
-              gatherings
-            </p>
-            <div class="links-container">
-              <div class="links-background">
-                <a href=""><i class="fas fa-link"></i></a>
-              </div>
-              <div class="links-background">
-                <a href="html/software-engineering-projects.html"
-                  ><i class="fab fa-github"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="design-projects">
-          <h3>Design</h3>
-          <section>
-            <a href="">
-              <img src="" alt="" />
-            </a>
-          </section>
-        </section>
 
-        <section class="UX-projects">
-          <h3>UI/UX design</h3>
-          <section>
-            <a href="">
-              <img src="" alt="" />
-            </a>
-          </section>
-        </section>
-      </section>
       <button
         class="top-btn"
         onclick='window.scrollTo({top: 0, behavior: "smooth"});'
@@ -179,9 +157,26 @@
     <!-- footer -->
     <footer>
       <p>Learning every single day, <br />To make a change!</p>
-      <a href=""><img src="images/email.svg" alt="email" /></a>
-      <a href=""><img src="images/twitter.svg" alt="twitter" /></a>
-      <a href=""><img src="images/linkedin.svg" alt="linkedin" /></a>
+      <a href="mailto:NoufAllshehri@gmail.com" target="_blank"
+        ><img src="images/email.svg" alt="email"
+      /></a>
+      <a href="https://twitter.com/_alnouf" target="_blank"
+        ><img src="images/twitter.svg" alt="twitter"
+      /></a>
+      <a href="https://www.linkedin.com/in/noufallshehri/" target="_blank"
+        ><img src="images/linkedin.svg" alt="linkedin"
+      /></a>
     </footer>
+
+    <script>
+      function showMenu() {
+        var x = document.getElementById("nav-links");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
   </body>
 </html>

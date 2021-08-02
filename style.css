@@ -2,18 +2,41 @@ body {
   margin-top: 10px;
   font-family: "Tajawal", sans-serif;
 }
-
 /*  */
 /* navigation bar */
 /*  */
 .nav-bar {
   background-color: #fff;
   position: fixed;
-  width: 90%;
+  width: 95%;
   padding: 10px 25px;
   border-radius: 26px;
 }
-
+/*  */
+.nav-bar a {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  text-decoration: none;
+}
+.nav-bar a i {
+  color: #f5cb5c;
+  font-size: 1.5em;
+}
+#nav-links {
+  background-color: #fff;
+  color: #005b83;
+  text-align: center;
+  display: none;
+  -webkit-box-shadow: 0 8px 6px -6px #f5cb5c;
+  -moz-box-shadow: 0 8px 6px -6px #f5cb5c;
+  box-shadow: 0 8px 6px -6px #f5cb5c;
+  margin-bottom: 30px;
+}
+#nav-links a {
+  color: #005b83;
+  text-decoration: none;
+}
 /*  */
 /* header */
 /*  */
@@ -97,7 +120,6 @@ body {
   width: 100%;
   height: 250px;
   border-radius: 10px;
-  background-image: url("images/alla-altayer.png");
   background-size: cover;
   background-position: center;
 }
@@ -126,7 +148,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 .overlay-under:hover {
   background-image: url("");
   opacity: 100%;
@@ -171,7 +192,9 @@ body {
   align-items: center;
   text-decoration: none;
 }
-
+.project {
+  height: 300px;
+}
 .top-btn {
   position: fixed;
   right: 10%;
@@ -186,6 +209,7 @@ body {
 }
 .top-btn i {
   font-size: 1.5em;
+  color: #005b83;
 }
 footer {
   background-color: #f5cb5c;
@@ -196,4 +220,5 @@ footer {
   color: #005b83;
   padding-top: 20px;
   padding-bottom: 20px;
+  margin-top: 30px;
 }
