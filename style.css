@@ -74,7 +74,7 @@ body {
   margin-top: 40px;
   box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.2);
   padding: 30px;
-  margin-top: -65px;
+  margin-top: -25px;
 }
 .skill-SE,
 .skill-Design,
@@ -322,6 +322,9 @@ footer {
   .projects-title {
     margin-top: 20px;
   }
+  .skills {
+    margin-top: -70px;
+  }
 }
 /* Medium Screens */
 @media (min-width: 600px) and (max-width: 900px) {
@@ -396,5 +399,8 @@ footer {
   }
   footer div a img {
     width: 50px;
+  }
+  .skills {
+    margin-top: -70px;
   }
 }
