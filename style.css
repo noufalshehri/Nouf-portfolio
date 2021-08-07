@@ -32,6 +32,10 @@ body {
   -moz-box-shadow: 0 8px 6px -6px #f5cb5c;
   box-shadow: 0 8px 6px -6px #f5cb5c;
   margin-bottom: 30px;
+  position: fixed;
+  width: 100%;
+  margin-top: -15px;
+  z-index: 100;
 }
 #nav-links a {
   color: #005b83;
