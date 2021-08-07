@@ -11,6 +11,7 @@ body {
   width: 95%;
   padding: 10px 25px;
   border-radius: 26px;
+  z-index: 100;
 }
 /*  */
 .nav-bar a {
@@ -59,8 +60,9 @@ body {
   text-align: justify;
   padding: 20px;
   font-size: 1.2em;
-  padding-top: 50px;
+  padding-top: 60px;
   z-index: -1;
+  height: 300px;
 }
 
 /*  */
@@ -72,6 +74,7 @@ body {
   margin-top: 40px;
   box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.2);
   padding: 30px;
+  margin-top: -70px;
 }
 .skill-SE,
 .skill-Design,
@@ -116,9 +119,10 @@ body {
 .projects h2 {
   color: #fabf46;
 }
-.projects h3 {
+.projects-title {
   color: #005b83;
   font-size: 1.5em;
+  text-align: center;
 }
 .overlay {
   width: 100%;
@@ -225,4 +229,172 @@ footer {
   padding-top: 20px;
   padding-bottom: 20px;
   margin-top: 30px;
+}
+
+/******media queries******/
+
+/* Large Screens */
+@media (min-width: 901px) {
+  .nav-bar {
+    width: 77%;
+  }
+  .header__img img {
+    width: 25%;
+  }
+  .header__description {
+    padding: 20px;
+    font-size: 1.5em;
+    font-weight: 500;
+    padding-top: 100px;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+  }
+  .header__description p {
+    width: 80%;
+    text-align: center;
+  }
+  .header__img {
+    margin-bottom: -70px;
+  }
+  .header__title {
+    margin-top: 15%;
+    margin-bottom: 40px;
+  }
+  .header__title h3 {
+    font-size: 1.9em;
+  }
+  /* nav-bar */
+  .nav-bar img {
+    width: 6%;
+  }
+  .nav-bar a i {
+    font-size: 2.3em;
+  }
+  #nav-links {
+    margin-top: 0px;
+  }
+  /* skills section */
+  .skill-SE ul li,
+  .skill-Design ul li,
+  .skill-UX ul li,
+  .skill-SE p,
+  .skill-Design p,
+  .skill-UX p {
+    font-size: 1.4em;
+  }
+  .skill-SE h3,
+  .skill-Design h3,
+  .skill-UX h3 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 2em;
+  }
+  .skill-SE img,
+  .skill-Design img,
+  .skill-UX img {
+    width: 120px;
+  }
+  footer {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer div p {
+    font-size: 1.4em;
+  }
+  footer div a img {
+    width: 50px;
+  }
+
+  /* projects */
+  .projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .project {
+    width: 30%;
+    margin-right: 25px;
+  }
+  .projects-title {
+    margin-top: 20px;
+  }
+}
+/* Medium Screens */
+@media (min-width: 600px) and (max-width: 900px) {
+  .nav-bar {
+    width: 80%;
+  }
+  .header__img img {
+    width: 25%;
+  }
+  .header__description {
+    padding: 20px;
+    font-size: 1.4em;
+    font-weight: 500;
+    padding-top: 80px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+  }
+  .header__description p {
+    width: 80%;
+    text-align: center;
+  }
+  .header__img {
+    margin-bottom: -70px;
+  }
+  .header__title {
+    margin-top: 15%;
+    margin-bottom: 40px;
+  }
+  .header__title h3 {
+    font-size: 1.9em;
+  }
+  /* nav-bar */
+  .nav-bar img {
+    width: 8.5%;
+  }
+  .nav-bar a i {
+    font-size: 2.3em;
+  }
+  #nav-links {
+    margin-top: 0px;
+  }
+  /* skills section */
+  .skill-SE ul li,
+  .skill-Design ul li,
+  .skill-UX ul li,
+  .skill-SE p,
+  .skill-Design p,
+  .skill-UX p {
+    font-size: 1.4em;
+  }
+  .skill-SE h3,
+  .skill-Design h3,
+  .skill-UX h3 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 2em;
+  }
+  .skill-SE img,
+  .skill-Design img,
+  .skill-UX img {
+    width: 120px;
+  }
+  footer {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer div p {
+    font-size: 1.2em;
+  }
+  footer div a img {
+    width: 50px;
+  }
 }
